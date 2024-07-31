@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de navegación vertical</title>
+    <link rel="stylesheet" href="vertical.css">
+</head>
+<body>
+    <!-- Barra de navegación vertical -->
+    <nav class="vertical-nav">
+        <div class="logo">
+            <img src="lego.png" alt="Mi Logo" width="150">
+        </div>    
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#">Inicio</a></li>
+
+        <!-- Menú desplegable -->
+             <li class="nav-item">
+                <a href="#">Servicios</a>
+                <ul class="dropdown">
+                    <li><a href="#">Servicio 1</a></li>
+                    <li><a href="#">Servicio 2</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="#">Contacto</a></li>
+        </ul>
+   <!-- Botón para alternar la visibilidad de la navegación -->
+   <button id="toggle-nav">Toggle Navigation</button>
+               <!-- Añadir scripts.js -->
+     <script src="vertical.js"></script>
+    </nav>
+    <!-- Contenido -->
+    <div class="content">
+        <h1>Bienvenido a mi página: Leydwan </h1>
+        <p>Este es un ejemplo de cómo crear una barra de navegación vertical efectiva.</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6643.064509383569!2d-80.97004283770123!3d8.10252079245116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spa!4v1722028287448!5m2!1sen!2spa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

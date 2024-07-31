@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* resolverá? */
+}
+
+.vertical-nav {
+    width: 200px;
+    background-color: #333;
+    height: 100vh;
+    position: fixed;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    border-bottom: 1px solid #444;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 210px; /* Deja espacio para la barra de navegación */
+    padding: 20px;
+    width: calc(100% - 210px); /* Ajusta el contenido para evitar el desbordamiento */
+}
+
+.logo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dropdown {
+    display: none;
+    background-color: #444;
+    margin-left: 20px;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    color: white;
+}
+
+/*Estilo para boton toggle*/
+#toggle-nav {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    align-self: flex-start; /* Alinea el botón al inicio en una columna */
+}
+
+#toggle-nav:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
